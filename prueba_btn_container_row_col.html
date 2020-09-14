@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hola mundo | Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Una forma de presentar un título y un contenido en forma muy destacada en una página se logra utilizando la clase "jumbotron".
+      Para hacer uso de esta herramienta que provee el Bootstrap 4 solo debemos encerrar el título y el contenido a mostrar en un div con la clase "jumbotron".-->
+    
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Tutorial de Bootstrap 4</h1>
+        <p>Prueba de jumbotron en CLASS CONTAINER JUMBOTRON</p>
+        <a href="#" class="btn btn-primary btn-lg">JUMBOTRON</a>
+      </div>
+    </div>
+
+    <div class="container-fluid">   
+      <div class="jumbotron jumbotron-fluid">
+        <h1>Tutorial de Bootstrap 4</h1> 
+        <p>Prueba de jumbotron en CLASS CONTAINER-FLUID JUMBOTRON-FLUID</p>
+        <a href="#" class="btn btn-primary btn-lg">JUMBOTRON-FLUID</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <p>Estas tres columnas se encuentran en una class container. Y cada una de ellas lleva la class col por defecto:</p>
+      <div class="row">
+        <div class="col" style="background-color: #aaa">
+          <h2>HOTEL 1</h2>
+          <div class="jumbotron">
+            <p>Este botón es class jumbotron</p>
+            <a href="#" class="btn btn-primary btn-lg">botón con fluid</a>
+          </div>
+        </div>
+
+        <div class="col" style="background-color: #bbb">
+          <h2>HOTEL 2</h2>
+          <div class="jumbotron jumbotron-fluid">
+            <p>Este botón es class jumbotron-fluid</p>
+            <a href="#" class="btn btn-primary btn-lg">botón sin fluid</a>
+          </div>
+        </div>
+        
+        <div class="col" style="background-color: #ccc">
+          <h2>HOTEL 3</h2>
+          <p>Este botón no esta dentro de ningún div class jumbotron</p>
+          <a href="#" class="btn btn-primary btn-lg">ver hotel 3</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg jumbotron" style="background-color:#aaa">
+          <a href="#" class="btn btn-primary btn-lg">
+            <h1>HOTEL 4</h1>
+            <p>class jumbotron dentro del div class col-lg</p>
+          </a>
+          
+        </div>
+        <div class="col-lg jumbotron"  style="background-color:#bbb">
+          <a href="#" class="btn">
+            <h1>HOTEL 5</h1>
+            <p>Acá hay una class btn pero no definí btn-primary y btn-lg</p>
+          </a>
+        </div>
+        <div class="col-lg jumbotron-fluid"  style="background-color:#ccc">
+          <a href="#" class="btn btn-primary btn-lg">
+            <h1>HOTEL 6</h1>
+            <p>Puse jumbotron-fluid dentro del div class col-lg</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- Con esto se calculan en forma automática los anchos de las columnas 1 y 3 El espacio que se reparte a izquierda y derecha es el mismo en forma independiente que haya mucho contenido en alguna de las dos columnas laterales-->
+    <div class="container">    
+      <div class="row">
+        <div class="col"  style="background-color:#aaa">
+          <h1>Hotel 8</h1> 
+          <p class="btn btn-primary btn-lg">Botón hotel 8
+            <a href="#"></a>
+          </p>
+        </div>
+        <div class="col-6"  style="background-color:#bbb">
+          <h1>Columna 2</h1> 
+          <p>Esto es una prueba de bootstrap 4.</p>
+        </div>
+        <div class="col"  style="background-color:#ccc">
+          <h1>Columna 3</h1> 
+          <p>Esto es una prueba de bootstrap 4.</p>
+        </div>      
+      </div>      
+    </div> 
+
+    
+    <hr>
+    
+    <!-- en el navegador que la columna primera obtiene más espacio que la tercer columna, ya que tiene más contenido-->
+    <div class="container">    
+      <div class="row">
+        <div class="col-auto"  style="background-color:#aaa">
+          <h1>Columna 1</h1> 
+          <p>Esto es una prueba de bootstrap 4.</p>
+        </div>
+        <div class="col-6"  style="background-color:#bbb">
+          <h1>Columna 2</h1> 
+          <p>Esto es una prueba de bootstrap 4.</p>
+        </div>
+        <div class="col-auto"  style="background-color:#ccc">
+          <p>Poco contenido.</p>
+        </div>      
+      </div>      
+    </div> 
+
+
+
+
+
+
+
+  </body>
+</html>

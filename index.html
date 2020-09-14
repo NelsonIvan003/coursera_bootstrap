@@ -6,21 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!--referencias vía cdn -- vamos a usar bootstrap local -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/2d1be7e99b.js" crossorigin="anonymous"></script>
 
-
-
-    <title>Hello, world!</title>
+    
+    <title>Ñieito!</title>
   </head>
+
+  
   <body>
-    <h1>Hello, world!</h1>
+
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-home"></i>
+        Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-address-card"></i>
+              Regístrate
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">¿Dónde estamos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
+
+
+    <div class="jumbotron text-center  d-flex align-items-center justify-content-center">
+      <section class="filtro-tras">
+        <h1 class="jumbo-h1">"ROLLER-CLUB COLÓN"</h1>
+        <p class="jumbo-text">ESTA PÁGINA ES AUSPICIADA POR CRIADERO <strong>"ÑIEITO"</strong> DE EL GRAN CANARICULTOR ARGENTINO</p>
+        <p class="jumbo-text"> <strong>ALBERTO ANTONIO TONTARELLI</strong></p>
+      </section>
+    </div>
+    
+
+    <div class="container-fluid carousel_inside text-center align-items-center">
+      <div class="row">
+        <div class="col bg-success">
+          <p>
+            <h3>
+              <span class="text-01">V</span>
+              <span class="text-02">a</span>
+              <span class="text-03">r</span>
+              <span class="text-04">i</span>
+              <span class="text-05">e</span>
+              <span class="text-06">d</span>
+              <span class="text-07">a</span>
+              <span class="text-08">d</span>
+              <span>&nbsp</span>
+              <span class="text-01">d</span>
+              <span class="text-02">e</span>
+              <span>&nbsp</span>
+              <span class="text-07">C</span>
+              <span class="text-06">o</span>
+              <span class="text-05">l</span>
+              <span class="text-04">o</span>
+              <span class="text-03">r</span>
+              <span class="text-02">e</span>
+              <span class="text-01">s</span>
+            </h3>
+            <p>Buscá el canario que más te guste!</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col bg-success">
+
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+  
+            <div class="carousel-inner">
+  
+              <div class="carousel-item active">
+                <img src="images/mosaico_01.jpg" alt="Mosaicos" height="275px">
+                <div class="carousel-caption">
+                  <h3>Mosaicos</h3>
+                  <!--<p>We had such a great time in LA!</p>-->
+                </div>   
+              </div>
+  
+              <div class="carousel-item">
+                <img src="images/amarillos.jpg" alt="Amarillos" height="275">
+                <div class="carousel-caption">
+                  <h3>Amarillos</h3>
+                  <!--<p>Thank you, Chicago!</p>-->
+                </div>   
+              </div>
+  
+              <div class="carousel-item">
+                <img src="images/agata_rojo_01.jpg" alt="Agata Rojo" height="275">
+                <div class="carousel-caption">
+                  <h3>Agata Rojo</h3>
+                </div>   
+              </div>
+  
+              <div class="carousel-item">
+                <img src="images/blanco.jpg" alt="Blanco Recesivo" height="275">
+                <div class="carousel-caption">
+                  <h3>Blanco Recesivo</h3>
+                </div>   
+              </div>
+  
+              <div class="carousel-item">
+                <img src="images/rojo_intenso.jpg" alt="Rojo Intenso" height="275">
+                <div class="carousel-caption">
+                  <h3>Rojo Intenso</h3>
+                </div>   
+              </div>
+            </div>
+  
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-fluid text-center after_carousel">
+      <div class="row">
+        <div class="col-sm-6 bg-warning">
+          <p>
+            <h3>¿Dónde puedo reservar o comprar?</h3>
+            <p>En la descripción del canario encontrarás el botón RESERVAR ó si querés también podes hacer una consulta previa.</p>
+          </p>
+        </div>
+        <div class="col-sm-6 bg-danger">
+          <p>
+            <h3>¿Cómo pago?</h3>
+            <p>Los métodos de pagos son variados, podés usar:
+                <ul class="list-group-item-dark bg-danger">
+                  <li>Tarjeta de crédito</li>
+                  <li>Mercado Pago</li>
+                  <li>Transferencia bancaria</li>
+                  <li>En efectivo</li>
+                </ul>
+                  o bien, lo podes acordar con el vendedor!
+            </p>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    
+
+    
+
+    <hr>
+
+    <section class="d-flex flex-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="text-white">Criadero:</p>
+            <h3 class="text-danger">Tweety & Silvestre</h3>
+            <p class="text-dark"> <strong>"Me pareció ver a un lindo gatito"</strong></p>
+            <div class="card bg-danger" style="width:300px; height: 600px">
+              <img class="card-img-top" src="images/153870812989482.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Es un conocido canaricultor de la zona. Sus canarios <strong>Mosaicos Rojos</strong> serán los nuevos campeones.</p>
+                <a href="#" class="btn text-03 border-dark stretched-link">Visitar criadero</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-white">Criadero:</p>
+            <h3 class="text-06">Sol de Kiara</h3>
+            <p class="text-dark"> <strong>"Situado en la provincia más linda de la Argentina"</strong></p>
+            <div class="card bg-primary" style="width:300px; height: 600px;">
+              <img class="card-img-top" src="images/lucianoluzo.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Luciano Luzo</h4>
+                <p class="card-text">Oriundo de Las Cuevas de Acsibi; es el flamante campeón argentino con sus hermosos canarios <strong>Bronce Intenso y Nevado</strong>. Difícil la tarea para competir en esos colores; seguro otro campeón ya estará emplumando en su criadero.</p>
+                <a href="#" class="btn text-03 border-dark stretched-link">Visitar criadero</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-white">Criadero:</p>
+            <h3 class="text-01">ÑIEITO</h3>
+            <p class="text-06"> <strong>"desde Wheelwright hacia toda la región"</strong></p>
+            <div class="card bg-warning" style="width:300px; height: 600px;">
+              <img class="card-img-top" src="images/alberto.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Alberto Antonio</h4>
+                <p class="card-text">Su criadero, popular entre los más conocidos, se dedica y especializa en los tres colores más difíciles de críar. Entre sus favoritos se encuentra el canario color <strong>Cobre</strong>. Date un paseo virtual por su criadero.</p>
+                <a href="#" class="btn text-01 border-dark stretched-link">Visitar criadero</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    
+
+    <footer class="row footer text-primary">
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+        <a href="#">Goolge</a>
+      </div>
+
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h6>Criadero Ñieito</h6>
+          <address>
+            <p>Larrea 675 - Wheelwright - Santa Fe - Argentina</p>
+            <p>Tel: 0-2473-15-472297</p>
+            <a href="mailto:albertotontarelli@gmail.com">albertotontarelli@gmail.com</a>
+          </address>
+      </div>
+
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="#">Nosotros</a>
+        <a href="#">Contactos</a>
+        <a href="#">Terminos y condiciones</a>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
   </body>
 </html>
